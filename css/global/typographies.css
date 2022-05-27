@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+
+body {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: "inter", sans-serif;
+  color: var(--gray-500);
+}
+
+.heading,
+.heading-md {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+}
+
+.heading--lg {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.heading--xl {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.heading--xs {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.heading--sm {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.content-md {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.content-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--gray-300);
+}
+
+.content-sm--gray-500 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--gray-500);
+}
+
+.content-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.content-xs--gray-300 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: var(--gray-300);
+}
+
+.overline {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+
+.code-text {
+  font-size: 90%;
+  line-height: 1rem;
+  font-style: italic;
+  font-family: "Space Mono", monospace;
+  color: var(--code-comentary);
+}
+.quote-text {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  text-align: center;
+  color: var(--primary-600);
+}
+
+.button-md-content {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}

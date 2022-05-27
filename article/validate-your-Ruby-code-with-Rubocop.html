@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="../css/styles.css" />  
+</head>
+<body>
+    <header class="section-header">
+        <div class='container header-base'>
+            <a class="logo" href="/index.html">
+                <img class="avatar-img" src="../readme_images/avatar/AvatarMaker.svg" alt="Katerin Arellano">
+                <div class="full-name">
+                    <span class="heading heading--sm">Katerin</span>
+                    <span class="heading heading--sm">Arellano</span>
+                </div>
+            </a>
+
+            <nav class="item">
+                <ul class="item content-md">
+                    <li class="hover-effects"><a href="/#article">Articles</a></li>
+                    <li class="hover-effects"><a href="/portafolio">Portafolio</a></li>
+                    <li class="hover-effects"><a href="/about.html">About</a></li>
+                    <li class="hover-effects"><a href="/contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+                </ul>
+            </nav> 
+
+            <!-- <img class="img-bars" src="../readme_images/bars.svg" alt="icon bars">    -->
+            <label for="hamburger">
+                <img class="img-x" src="../readme_images/icons/bars.svg" alt="icon bars"> 
+            </label>
+        </div>
+
+        <input type="checkbox" class="checkbox" id="hamburger">
+        <div class="mobile-menu">
+            <ul class="item-mobile content-md mt-32">
+                <li class="hover-effects"><a href="/#article">Articles</a></li>
+                <li class="hover-effects"><a href="/portafolio">Portafolio</a></li>
+                <li class="hover-effects"><a href="/about.html">About</a></li>
+                <li class="hover-effects"><a href="/contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section gray">
+        <div class="container">
+            <article>
+                <p class="overline article-date">December 23, 2021</p>
+                <h3 class="heading-md article-title text-center"> Validate your Ruby code with Rubocop</h3>
+                <img class="mb-16" src="../readme_images/rubocop.jpg" alt="image logo rubocop">
+                <p class="content-lg article-paragraph">
+                    Ruby recommends the best practices so that we can write a clean code so that other programmers can understand it, through these recommendations we have <a href="https://github.com/rubocop/ruby-style-guide">The Ruby style guide</a>.
+                </p>
+                <p class="content-lg article-paragraph">
+                    The guide is divided into several related guideline sections that are based on the professional experience of the editors, comments and suggestions from members of the Ruby community, and various programming resources.
+                </p>
+                <h3 class="heading--sm article-title">Use Rubocop to validate our code</h3>
+                <p class="content-lg article-paragraph">
+                    Ruby's style guide is extensive, both in the rules defined on structure, syntax, classes, exception handling and many more sections.
+                </p>
+                <p class="content-lg article-paragraph">               
+                    Learning all the rules is somewhat complicated, so there are code analyzers like Rubocop that verify your code structure and compliance with each of the rules defined in the style guide.
+                </p>
+                <p class="content-lg article-paragraph">
+                    Rubocop is extremely easy to install and like any other gem we can install it in two ways: global or local.
+                </p>
+
+                <pre class="contenedor__code mb-16">
+                    <span class="code-text"># Instalación global</span>
+                    <code>gem install rubocop</code>
+                    <span class="code-text"># Instalación por proyectol</span>
+                    <code>gem 'rubocop', require: false</code>
+                </pre>
+
+                <p class="content-lg article-paragraph">
+                    Having already installed rubocop, we are going to execute it with the following command in the terminal:
+                </p>
+
+                <pre class="contenedor__code mb-16">
+                    <span class="code-text"># Válida todos los archivos del directorio</span>
+                    <code>rubocop</code>
+                    <span class="code-text"># Válida solo un archivo</span>
+                    <code>rubocop nombre_archivo.rb</code>
+                </pre>
+                <p class="content-lg article-paragraph">   
+                    As you use the gem you will become familiar with the warnings and you will see that your code will be more readable.
+                </p>
+            </article>
+            <div class="text-center">
+                <a class="button-md-content text-center" href="/index.html">Back to home</a>
+            </div>
+        </div>
+    </section>   
+    
+    <div class="section footer">
+        <div class='container footer__content'>
+            <p class="heading heading--xl white text-center">
+                Can I help you?
+            </p> 
+            <button class="button button--lg button--secondary button__fit-content">Get in touch!</button>
+        </div>
+    </div>
+</body>
+</html>

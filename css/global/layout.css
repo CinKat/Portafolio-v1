@@ -1,0 +1,22 @@
+.section {
+  padding: 64px 16px;
+}
+
+.section-header {
+  padding: 32px;
+}
+
+.container {
+  max-width: 760px; /*El width se aplicara dependiendo al padre*/
+  margin: auto; /*posiciona al centro*/
+}
+
+.container-lg {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.container-xl {
+  max-width: 1280px;
+  margin: auto;
+}

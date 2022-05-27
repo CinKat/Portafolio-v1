@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portafolio</title>
+      <link rel="stylesheet" href="../css/styles.css" />  
+  </head>
+  <body>
+    <header class="section-header">
+      <div class='container header-base'>
+          <a class="logo" href="/index.html">
+              <img class="avatar-img" src="../readme_images/avatar/AvatarMaker.svg" alt="Katerin Arellano">
+              <div class="full-name">
+                  <span class="heading heading--sm">Katerin</span>
+                  <span class="heading heading--sm">Arellano</span>
+              </div>
+          </a>
+
+          <nav class="item">
+              <ul class="item content-md">
+                  <li class="hover-effects"><a href="/#article">Articles</a></li>
+                  <li class="hover-effects"><a href="/portafolio">Portafolio</a></li>
+                  <li class="hover-effects"><a href="/about.html">About</a></li>
+                  <li class="hover-effects"><a href="/contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+              </ul>
+          </nav> 
+
+          <!-- <img class="img-bars" src="../readme_images/bars.svg" alt="icon bars">    -->
+          <label for="hamburger">
+              <img class="img-x" src="../readme_images/icons/bars.svg" alt="icon bars"> 
+          </label>
+      </div>
+
+      <input type="checkbox" class="checkbox" id="hamburger">
+      <div class="mobile-menu">
+          <ul class="item-mobile content-md mt-32">
+              <li class="hover-effects"><a href="/#article">Articles</a></li>
+              <li class="hover-effects"><a href="/portafolio">Portafolio</a></li>
+              <li class="hover-effects"><a href="/about.html">About</a></li>
+              <li class="hover-effects"><a href="/contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+          </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="section gray">
+        <div class="container-xl">
+          <div class="portfolio">
+            <header class="portfolio__header">
+              <h1 class="heading heading--lg">Portfolio</h1>
+              <p class="content-lg">Practice builds mastery</p>
+            </header>
+            <div class="portfolio__container">
+              <div class="portfolio__filter">
+                <details class="filter-main" open>
+                  <summary class="heading heading--xs filter-main__header">
+                    <span>Filters</span>
+                    <span class="filter-main__icon">+</span>
+                  </summary>
+                  <details class="filter content-lg">
+                    <summary class="filter__header">
+                      <span class="filter__title">Project Type</span>
+                      <span class="filter__icon">+</span>
+                    </summary>
+                    <div class="filter__content">
+                      <div class="custom-checkbox">
+                          <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="check" id="check-1">
+                            <div class="flex">  
+                              <label for="check-1" class="custom-checkbox__label content-sm--gray-500 ">Full Stack</label>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="custom-checkbox">
+                          <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="check" id="check-2">
+                            <div class="flex">  
+                              <label for="check-2" class="custom-checkbox__label content-sm--gray-500 ">Front-end</label>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="custom-checkbox">
+                          <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="check" id="check-3">
+                            <div class="flex">  
+                              <label for="check-3" class="custom-checkbox__label content-sm--gray-500 ">Back-end</label>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="custom-checkbox">
+                          <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="check" id="check-4">
+                            <div class="flex">  
+                              <label for="check-4" class="custom-checkbox__label content-sm--gray-500 ">CLI</label>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="filter content-lg">
+                    <summary class="filter__header">
+                      <span class="filter__title">Programming Language</span>
+                      <span class="filter__icon">+</span>
+                    </summary>
+                    <div class="filter__content">
+                      <div class="custom-checkbox">
+                          <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="check" id="check-5">
+                            <div class="flex">  
+                              <label for="check-5" class="custom-checkbox__label content-sm--gray-500 ">Ruby</label>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="custom-checkbox">
+                          <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="check" id="check-6">
+                            <div class="flex">  
+                              <label for="check-6" class="custom-checkbox__label content-sm--gray-500 ">JavaScript</label>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="filter content-lg">
+                    <summary class="filter__header">
+                      <span class="filter__title">Frameworks</span>
+                      <span class="filter__icon">+</span>
+                    </summary>
+                    <div class="filter__content">
+                      <div class="custom-checkbox">
+                          <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="check" id="check-7">
+                            <div class="flex">  
+                              <label for="check-7" class="custom-checkbox__label content-sm--gray-500 ">Ruby on Rails</label>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </details>
+                  <details class="filter content-lg">
+                    <summary class="filter__header">
+                      <span class="filter__title">Dev Skills</span>
+                      <span class="filter__icon">+</span>
+                    </summary>
+                    <div class="filter__content">
+                      <div class="custom-checkbox">
+                          <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="check" id="check-8">
+                            <div class="flex">  
+                              <label for="check-8" class="custom-checkbox__label content-sm--gray-500 ">Option</label>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </details>
+                </details>
+              </div>
+              <div class="portfolio-card">
+                <header class="portfolio-card__header">
+                  <div class="portfolio-card__icon-container">
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/terminal-solid 1.svg"
+                        alt="terminal-icon"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/Ruby.svg"
+                        alt="ruby-logo"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/github-brands 1.svg"
+                        alt="github-logo"
+                      />
+                    </div>
+                  </div>
+                  <a href="./calencli.html">
+                    <img src="../readme_images/icons/arrow.svg" alt="arrow" />
+                  </a>
+                </header>
+                <div class="portfolio-card__content">
+                  <h2 class="heading-xs">CalenCLI</h2>
+                  <p>
+                    The best agenda in a command line interface. With this program you will be able to create, store, modify and view the details of your agenda.
+                  </p>
+                  <div class="portfolio-card__tag-container">
+                    <div class="tag">Control Flow</div>
+                    <div class="tag">Methods</div>
+                    <div class="tag">Loops</div>
+                    <div class="tag">Dates</div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <header class="portfolio-card__header">
+                  <div class="portfolio-card__icon-container">
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/terminal-solid 1.svg"
+                        alt="terminal-icon"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/Ruby.svg"
+                        alt="ruby-logo"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/github-brands 1.svg"
+                        alt="github-logo"
+                      />
+                    </div>
+                  </div>
+                  <a href="./pokemon_ruby.html">
+                    <img src="../readme_images/icons/arrow.svg" alt="arrow" />
+                  </a>
+                </header>
+                <div class="portfolio-card__content">
+                  <h2 class="heading-xs">Pokemon Ruby</h2>
+                  <p>
+                    The best Pokemon console game, this program will entertain you a lot.
+                  </p>
+                  <div class="portfolio-card__tag-container">
+                    <div class="tag">Classes</div>
+                    <div class="tag">Modules</div>
+                    <div class="tag">Inheritance</div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <header class="portfolio-card__header">
+                  <div class="portfolio-card__icon-container">
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/terminal-solid 1.svg"
+                        alt="terminal-icon"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/Ruby.svg"
+                        alt="ruby-logo"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/github-brands 1.svg"
+                        alt="github-logo"
+                      />
+                    </div>
+                  </div>
+                  <a href="./clinboards.html">
+                    <img src="../readme_images/icons/arrow.svg" alt="arrow" />
+                  </a>
+                </header>
+                <div class="portfolio-card__content">
+                  <h2 class="heading-xs">CLIn Boards</h2>
+                  <p>
+                    With CLIn Boards you can create lists, letters that are stored locally, it will help you in your organization.
+                  </p>
+                  <div class="portfolio-card__tag-container">
+                    <div class="tag">Files Manipulation</div>
+                    <div class="tag">JSON</div>
+                    <div class="tag">Classes</div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <header class="portfolio-card__header">
+                  <div class="portfolio-card__icon-container">
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/terminal-solid 1.svg"
+                        alt="terminal-icon"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/Ruby.svg"
+                        alt="ruby-logo"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/github-brands 1.svg"
+                        alt="github-logo"
+                      />
+                    </div>
+                  </div>
+                  <a href="./expensableCli.html">
+                    <img src="../readme_images/icons/arrow.svg" alt="arrow" />
+                  </a>
+                </header>
+                <div class="portfolio-card__content">
+                  <h2 class="heading-xs">Expensable CLI</h2>
+                  <p>
+                    Expensable is an expense/income tracker app that exposes an API to allow the developer to freely build their own interfaces to interact with the app data.
+                  </p>
+                  <div class="portfolio-card__tag-container">
+                    <div class="tag">HTTP Requests</div>
+                    <div class="tag">Classes</div>
+                    <div class="tag">Modules</div>
+                    <div class="tag">Exception and testing</div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <header class="portfolio-card__header">
+                  <div class="portfolio-card__icon-container">
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/terminal-solid 1.svg"
+                        alt="terminal-icon"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/Ruby.svg"
+                        alt="ruby-logo"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/github-brands 1.svg"
+                        alt="github-logo"
+                      />
+                    </div>
+                  </div>
+                  <a href="./calencli.html">
+                    <img src="../readme_images/icons/arrow.svg" alt="arrow" />
+                  </a>
+                </header>
+                <div class="portfolio-card__content">
+                  <h2 class="heading-xs">CalenCLI</h2>
+                  <p>
+                    Doloribus dolores nostrum quia qui natus officia quod et
+                    dolorem. Sit repellendus qui ut at blanditiis et quo et
+                    molestiae.
+                  </p>
+                  <div class="portfolio-card__tag-container">
+                    <div class="tag">Control Flow</div>
+                    <div class="tag">Methods</div>
+                    <div class="tag">Loops</div>
+                    <div class="tag">Dates</div>
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-card">
+                <header class="portfolio-card__header">
+                  <div class="portfolio-card__icon-container">
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/terminal-solid 1.svg"
+                        alt="terminal-icon"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/Ruby.svg"
+                        alt="ruby-logo"
+                      />
+                    </div>
+                    <div class="portfolio-card__icon">
+                      <img
+                        src="../readme_images/icons/github-brands 1.svg"
+                        alt="github-logo"
+                      />
+                    </div>
+                  </div>
+                  <a href="./calencli.html">
+                    <img src="../readme_images/icons/arrow.svg" alt="arrow" />
+                  </a>
+                </header>
+                <div class="portfolio-card__content">
+                  <h2 class="heading-xs">CalenCLI</h2>
+                  <p>
+                    Doloribus dolores nostrum quia qui natus officia quod et
+                    dolorem. Sit repellendus qui ut at blanditiis et quo et
+                    molestiae.
+                  </p>
+                  <div class="portfolio-card__tag-container">
+                    <div class="tag">Control Flow</div>
+                    <div class="tag">Methods</div>
+                    <div class="tag">Loops</div>
+                    <div class="tag">Dates</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="section footer">
+      <div class="section footer">
+        <div class='container footer__content'>
+            <p class="heading heading--xl white text-center">
+                Can I help you?
+            </p> 
+            <button class="button button--lg button--secondary button__fit-content">Get in touch!</button>
+        </div>
+    </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="../css/styles.css" />  
+</head>
+<body>
+    <header class="section-header">
+        <div class='container header-base'>
+            <a class="logo" href="/index.html">
+                <img class="avatar-img" src="../readme_images/avatar/AvatarMaker.svg" alt="Katerin Arellano">
+                <div class="full-name">
+                    <span class="heading heading--sm">Katerin</span>
+                    <span class="heading heading--sm">Arellano</span>
+                </div>
+            </a>
+
+            <nav class="item">
+                <ul class="item content-md">
+                    <li class="hover-effects"><a href="/#article">Articles</a></li>
+                    <li class="hover-effects"><a href="/portafolio">Portafolio</a></li>
+                    <li class="hover-effects"><a href="/about.html">About</a></li>
+                    <li class="hover-effects"><a href="/contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+                </ul>
+            </nav> 
+
+            <!-- <img class="img-bars" src="../readme_images/bars.svg" alt="icon bars">    -->
+            <label for="hamburger">
+                <img class="img-x" src="../readme_images/icons/bars.svg" alt="icon bars"> 
+            </label>
+        </div>
+
+        <input type="checkbox" class="checkbox" id="hamburger">
+        <div class="mobile-menu">
+            <ul class="item-mobile content-md mt-32">
+                <li class="hover-effects"><a href="/#article">Articles</a></li>
+                <li class="hover-effects"><a href="/portafolio">Portafolio</a></li>
+                <li class="hover-effects"><a href="/about.html">About</a></li>
+                <li class="hover-effects"><a href="/contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section gray">
+        <div class="container">
+            <article>
+                <p class="overline article-date">December 30, 2021</p>
+                <h3 class="heading-md article-title text-center">General concepts of selectors in CSS</h3>
+                <p class="content-lg article-paragraph">    
+                    One of the first rules to style our website is the use of selectors.
+                    In CSS selectors are used to select the HTML elements that you want to style.
+                </p>
+                <p class="content-lg article-paragraph">      
+                    Selectors tend to fall into five categories:
+                </p>
+                <ol class="content-lg article-paragraph">
+                    <li>Simple or basic selectors</li>
+                    <li>Attribute selectors</li>
+                    <li>Pseudo-class selectors</li>
+                    <li>Pseudo-element selectors</li>
+                    <li>Combiner Selectors</li>
+                </ol>
+                <p class="content-lg article-paragraph">Let's start learning the basics of selectors.</p>
+                <h1 class="heading heading--xs article-title">Basic CSS selectors</h1>
+                <p class="content-lg article-paragraph">These types of selectors are enough to be able to create a stylish web page.</p>
+                <ul>
+                    <li class="custom-check heading--xs article-paragraph">
+                        <strong>CSS element selector (type):</strong> Select HTML elements based on element names or semantic names.
+                    </li>
+                    <pre class="contenedor__code mb-16">
+                        <span class="code-text">/* selecting all p elements */</span>
+                        <code>
+                            p {
+                                text-align: center;
+                                color: red;
+                            }
+                        </code>
+                        <span class="code-text">/* selecting all article elements */</span>
+                        <code>
+                            article {
+                                font-size: 14px;
+                                line-height: 1.1px;
+                            }
+                        </code>
+                    </pre>
+                    <li class="heading--xs article-paragraph">
+                        <strong>CSS id selector:</strong> If a single element needs a unique style, we can give it an id. This can only have a single value and can only be used once per page. To be able to select we prepend the name of the id with a (#).
+                    </li>
+                    <pre class="contenedor__code mb-16">
+                        <code>
+                            #contenedor-flex {
+                                display: flex;
+                                gap: 1rem;
+                            }
+                        </code>
+                    </pre>
+                    <li class="heading--xs article-paragraph">      
+                        <strong>Selector of CSS classes:</strong> It is one of the most common ways to select a style, to use it a period is included. + class name.
+                    </li>
+                    <pre class="contenedor__code mb-16">
+                        <code>
+                            .mb-32 {
+                                margin-bottom: 32px;
+                            }
+                        </code>
+                    </pre>
+                    <li class="heading--xs article-paragraph">
+                        <strong>Universal selector:</strong> This selector gives style to the entire entire page, it is used with the *.
+                    </li>
+                    <pre class="contenedor__code mb-16">
+                        <code>
+                            * {
+                                box-sizing: border-box;
+                            }
+                        </code>
+                    </pre>
+                </ul>
+
+                <h1 class="heading heading--xs article-title">Attribute selectors</h1>
+                <p class="content-lg article-paragraph">These types of selectors are enough to be able to create a stylish web page.</p>
+                <p class="content-lg article-paragraph">
+                    Attribute selectors allow you to select elements based on whether a certain attribute is present or not.
+                </p>
+                
+                <p class="content-lg article-paragraph">
+                    It is to be able to add styles to the attributes of an HTML element such as hrf, src, etc. The way to apply it individually is by calling the name of the element, the name of the attribute and its value if it has to be able to identify it.
+                </p>
+                <pre class="contenedor__code mb-16">
+                    <code>
+                        a[title] { }
+                    </code>
+                </pre>
+                <h1 class="heading heading--xs article-title">Pseudo-class and pseudo-element selectors</h1>
+                <p class="content-lg article-paragraph">
+                    First, pseudo-class selectors select items based on a certain state. You may have seen things like: hover or: active. These are the states of the elements on your page. You can select items based on whether that item is in the specified state.
+                </p>
+
+                <p class="content-lg article-paragraph">   
+                    While pseudoelement selectors select parts of an element, for this two double points are used: a difference of pseudoclasses.
+                </p>
+                <pre class="contenedor__code mb-16">
+                    <span class="code-text">/* Pseudo-class */</span>
+                    <code>
+                        a: hover {}
+                    </code>
+                    <span class="code-text">/* Pseudo-element */</span>
+                    <code>
+                        p::first-line { }
+                    </code>
+                </pre>
+                <h1 class="heading heading--xs article-title">Combiner selectors</h1>
+                <p class="content-lg article-paragraph">These selectors can combine more than one CSS selector. We have the:</p>
+                <ol class="content-lg article-paragraph">
+                    <li>Descendant selectors</li>
+                    <li>Child selectors</li>
+                    <li>Adjacent sibling selectors</li>
+                    <li>General sibling selectors</li>
+                </ol>
+                
+                <p class="content-lg article-paragraph">
+                    In order to understand its use, let's remember that HTML follows a hierarchy of a family tree. This means that there is a parent element that can contain children, and children can have children, and so on, like a family tree.
+                </p>
+                <pre class="contenedor__code mb-16">
+                    <code>
+                        article > p { }
+                    </code>
+                </pre>
+            </article>
+            <div class="text-center">
+                <a class="button-md-content text-center" href="/index.html">Back to home</a>
+            </div>
+        </div>
+    </section>   
+    
+    <div class="section footer">
+        <div class='container footer__content'>
+            <p class="heading heading--xl white text-center">
+                Can I help you?
+            </p> 
+            <button class="button button--lg button--secondary button__fit-content">Get in touch!</button>
+        </div>
+    </div>
+</body>
+</html>

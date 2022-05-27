@@ -1,0 +1,50 @@
+.input {
+  width: fit-content; /*Tan ancho o alto como su contenido necesite, pero sin desbordes.*/
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px 12px;
+  display: flex;
+  gap: 11px;
+}
+
+.input--default {
+  border: 1px solid var(--gray-200);
+}
+
+.input--default-error {
+  border: 1px solid var(--primary-700);
+}
+
+.input--focus {
+  border: 1px solid var(--primary-300);
+}
+
+.input--focus-error {
+  border: 1px solid var(--error-300);
+}
+
+.input > input {
+  border: none; /*borde de cuadro interno de input*/
+  padding: 0;
+  width: 100%;
+}
+
+.input > input:focus {
+  outline: none; /*borde de cuadro interno de input*/
+}
+
+.input__placeholder > input::placeholder {
+  color: var(--error-200); /*borde de cuadro interno de input*/
+}
+
+.input__focus-within--focus:focus-within {
+  box-shadow: 0px 0px 4px var(--primary-300);
+}
+
+.input__focus-within--error:focus-within {
+  box-shadow: 0px 0px 4px var(--error-300);
+}
+
+.message-error {
+  color: var(--error-300);
+}

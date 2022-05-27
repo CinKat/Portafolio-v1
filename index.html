@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal blog</title>
+    <link rel="stylesheet" href="./css/styles.css" />  
+</head>
+<body>
+    <header class="section-header">
+        <div class='container header-base'>
+            <a class="logo" href="index.html">
+                <img class="avatar-img" src="../readme_images/avatar/AvatarMaker.svg" alt="Katerin Arellano">
+                <div class="full-name">
+                    <span class="heading heading--sm">Katerin</span>
+                    <span class="heading heading--sm">Arellano</span>
+                </div>
+            </a>
+
+            <nav class="item">
+                <ul class="item content-md">
+                    <li class="hover-effects"><a href="#article">Articles</a></li>
+                    <li class="hover-effects"><a href="portafolio/index.html">Portafolio</a></li>
+                    <li class="hover-effects"><a href="about.html">About</a></li>
+                    <li class="hover-effects"><a href="contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+                </ul>
+            </nav> 
+
+            <!-- <img class="img-bars" src="../readme_images/bars.svg" alt="icon bars">    -->
+            <label for="hamburger">
+                <img class="img-x" src="./readme_images/icons/bars.svg" alt="icon bars"> 
+            </label>
+        </div>
+
+        <input type="checkbox" class="checkbox" id="hamburger">
+        <div class="mobile-menu">
+            <ul class="item-mobile content-md mt-32">
+                <li class="hover-effects"><a href="#article">Articles</a></li>
+                <li class="hover-effects"><a href="portafolio/index.html">Portafolio</a></li>
+                <li class="hover-effects"><a href="about.html">About</a></li>
+                <li class="hover-effects"><a href="contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+            </ul>
+        </div>
+    </header>
+ 
+    <div class="section">
+        <div class='container'>
+            <h1 class="heading heading--lg">
+                Hi! I'm <span class="name">Katerin</span>, Full Stack web development student
+            </h1>
+            <p class="content-lg">
+                I am specializing in building full-stack web applications using Ruby on Rails.
+                I commit my work to <a href="https://github.com/CinKat" target="_blank">Github</a> and use <a href="https://twitter.com/" target="_blank">Twitter</a> to stay in touch with the latest trends.
+            </p>
+        </div>
+    </div>
+
+    <div class="section gray">
+        <div class='container' id="article">
+            <h2 class="heading heading--lg articles-title text-center">
+                Last Articles
+            </h2>
+            
+            <article class="article-conteiner-flex">
+                <div class="article-flex">
+                    <div class="article">
+                        <p class="overline article-date">December 18, 2021</p>
+                        <h3 class="heading heading-md article-title"> Why are there few women programming?</h3>
+                        <p class="content-lg article-sumary">
+                            Although technology is consumed by both men and women, it is created only by men. If we want technology to be able to respond to the needs of women, we need to have diverse teams.
+                        </p>
+                        <a href="./article/why-are-there-few-womeb-programing.html" class = "button-md-content">Read more</a>
+                    </div>
+
+                    <div class="article">
+                        <p class="overline article-date">December 23, 2021</p>
+                        <h3 class="heading heading-md article-title"> Validate your Ruby code with Rubocop</h3>
+                        <p class="content-lg article-sumary">
+                            Rubocop will help us to have a more readable code.
+                        </p>
+                        <a href="./article/validate-your-Ruby-code-with-Rubocop.html" class = "button-md-content">Read more</a>
+                    </div>
+                </div>
+
+                <div class="article-flex">
+                    <div class="article">
+                        <p class="overline article-date">December 30, 2021</p>
+                        <h3 class="heading heading-md article-title">General concepts of selectors in CSS</h3>
+                        <p class="content-lg article-sumary">
+                            One of the first rules to style our website is the use of selectors.
+                            In CSS selectors are used to select the HTML elements that you want to style.
+                        </p>
+                        <a href="./article/General-concepts-of-selectors-in-CSS.html" class = "button-md-content">Read more</a>
+                    </div>
+
+                    <div class="article">
+                        <p class="overline article-date">January 1, 2021</p>
+                        <h3 class="heading heading-md article-title"> Ruby on Rails</h3>
+                        <p class="content-lg article-sumary">
+                            Ruby on Rails, also known as RoR and Rails, is a web framework used for web development. 
+                            That's why Ruby on Rails is often referred to as "startup technology" because it was built for quick launches.
+                        </p>
+                        <a href="./article/ruby-on-rails.html" class = "button-md-content">Read more</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="section footer">
+        <div class='container footer__content'>
+            <p class="heading heading--xl white text-center">
+                Can I help you?
+            </p> 
+            <button class="button button--lg button--secondary">Get in touch!</button>
+        </div>
+    </div>
+</body>
+</html>

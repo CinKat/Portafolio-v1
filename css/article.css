@@ -1,0 +1,84 @@
+.articles-title {
+  padding-bottom: 3rem;
+}
+
+.article-date,
+.article-title,
+.article-sumary,
+.article-paragraph {
+  margin-bottom: 16px;
+}
+
+.article {
+  margin-bottom: 3rem;
+}
+
+/************** Diseño primer articulo ***********/
+
+.image {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+
+.text-img {
+  max-width: 252px;
+  margin: auto;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+.list-padding {
+  padding-left: 20px;
+}
+
+.quote {
+  max-width: 640px;
+  margin: auto;
+  /*Validar si es borde*/
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/****************************************** FLEX ARTICLE  - Index_principal************************************/
+
+.article-conteiner-flex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.article-flex {
+  display: flex;
+  column-gap: 3rem;
+  row-gap: 3rem;
+  /* justify-content: center; */
+  flex-wrap: wrap;
+  width: 21.25rem;
+}
+
+@media only screen and (max-width: 760px) {
+  .article-flex {
+    width: 100%;
+  }
+}
+
+/*********** Article 2 ************/
+
+pre {
+  display: block;
+  /* font-family: monospace; */
+  white-space: pre;
+  margin: 0;
+}
+
+.contenedor__code {
+  padding: 1rem;
+  overflow: auto;
+  background-color: var(--gray-150);
+  border-radius: 6px;
+}
+
+/************* article 3 ************/

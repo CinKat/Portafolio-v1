@@ -1,0 +1,220 @@
+.portfolio__container {
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.filter-main > * {
+  margin-top: 1rem;
+}
+
+.filter-main__header {
+  margin-top: 0px;
+}
+
+.filter:last-child {
+  margin-bottom: 0;
+}
+
+.filter-main[open] {
+  pointer-events: none;
+}
+
+.filter {
+  pointer-events: initial;
+}
+
+.filter-main[open] .filter-main__icon {
+  display: none;
+}
+
+.portfolio__filter {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  grid-row: 1 / -1;
+}
+
+.portfolio__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.portfolio-card__icon {
+  width: 40px;
+  height: 40px;
+  background: var(--gray-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.portfolio-card__icon-container {
+  display: flex;
+  gap: 16px;
+}
+
+.portfolio-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.portfolio-card {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.portfolio-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tag {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding: 0.125rem 0.625rem;
+  background-color: var(--primary-100);
+  color: var(--gray-500);
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.portfolio-card__tag-container {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.portfolio__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  background-color: var(--gray-100);
+  gap: 1px;
+}
+
+@media screen and (max-width: 965px) {
+  .portfolio__container {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-main[open] {
+    pointer-events: initial;
+  }
+
+  .filter-main[open] .filter-main__icon {
+    display: block;
+  }
+}
+
+/************************ CalecnCli - built******************************************/
+
+.tools-card__icon {
+  width: 48px;
+  height: 48px;
+  background: var(--primary-400);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.tools-card__icon-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 18rem;
+}
+
+.tools-card {
+  display: flex;
+  /*justify-content: space-between;*/
+  gap: 7.5rem;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+}
+
+.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .tools-card {
+    display: block;
+  }
+
+  .tools-card__icon-container {
+    margin-bottom: 2rem;
+    max-width: none;
+  }
+}
+
+/******************************* team *********************************************/
+
+.team-card-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.team-card_icon-container {
+  display: flex;
+  gap: 21px;
+}
+
+.team-card__img-container {
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 17rem;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 2rem;
+}
+
+.team-card {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.team-card__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@media screen and (max-width: 921px) {
+  .team-card {
+    display: block;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+
+  .team-card__img-container {
+    display: flex;
+    max-width: none;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .team-card__text {
+    margin-bottom: 2rem;
+  }
+}

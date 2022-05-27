@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/styles.css" />  
+</head>
+<body>
+    <header class="section-header">
+        <div class='container header-base'>
+            <a class="logo" href="index.html">
+                <img class="avatar-img" src="../readme_images/avatar/AvatarMaker.svg" alt="Katerin Arellano">
+                <div class="full-name">
+                    <span class="heading heading--sm">Katerin</span>
+                    <span class="heading heading--sm">Arellano</span>
+                </div>
+            </a>
+
+            <nav class="item">
+                <ul class="item content-md">
+                    <li class="hover-effects"><a href="#article">Articles</a></li>
+                    <li class="hover-effects"><a href="portafolio/index.html">Portafolio</a></li>
+                    <li class="hover-effects"><a href="about.html">About</a></li>
+                    <li class="hover-effects"><a href="contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+                </ul>
+            </nav> 
+
+            <!-- <img class="img-bars" src="../readme_images/bars.svg" alt="icon bars">    -->
+            <label for="hamburger">
+                <img class="img-x" src="./readme_images/icons/bars.svg" alt="icon bars"> 
+            </label>
+        </div>
+
+        <input type="checkbox" class="checkbox" id="hamburger">
+        <div class="mobile-menu">
+            <ul class="item-mobile content-md mt-32">
+                <li class="hover-effects"><a href="#article">Articles</a></li>
+                <li class="hover-effects"><a href="portafolio/index.html">Portafolio</a></li>
+                <li class="hover-effects"><a href="about.html">About</a></li>
+                <li class="hover-effects"><a href="contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <header class="header-contact">
+                    <h3 class="heading heading--lg">Contact</h3>
+                    <p class="content-lg">
+                        Looking to expand your team? Or do you need a web developer for a specific project? If I can help you in any way don't hesitate to fill this form.
+                    </p>
+                </header>
+                <form action="" class="container--form">
+                    <div class="contenedor-row mb-16">
+                        <div class="contenedor-flex__column padding"> <!--Contiene el flex principal-->
+                            <label for="firts-name" class="overline">Firts Name</label>
+                            <div class="input input--default ">
+                            <input type="text" id="firts-name" name="firts-name">
+                            </div>
+                        </div>
+                        <div class="contenedor-flex__column"> <!--Contiene el flex principal-->
+                            <label for="last-name" class="overline">Last Name</label>
+                            <div class="input input--default ">
+                            <input type="text" id="last-name" name="last-name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contenedor-flex__column mb-16"> <!--Contiene el flex principal-->
+                        <label for="Company" class="overline">Company</label>
+                        <div class="input input--default ">
+                        <input type="text" id="Company" name="Company">
+                        </div>
+                    </div>
+
+                    <div class="contenedor-flex__column mb-16"> <!--Contiene el flex principal-->
+                        <label for="email" class="overline">Email</label>
+                        <div class="input input--default ">
+                        <input type="mail" id="email" name="email">
+                        </div>
+                    </div>
+
+                    <div class="contenedor-row mb-16">
+                        <div class="custom contenedor-flex__column padding"> 
+                            <label for="country" class="overline">Country</label>
+                            <div >
+                                <select class="custom-option custom-option--default" name="option" id="country">
+                                    <option>Select one</option>
+                                    <option>Perú</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="contenedor-flex__column"> <!--Contiene el flex principal-->
+                            <label for="phone" class="overline">Phone Number</label>
+                            <div class="input input--default ">
+                            <input type="text" id="phone" name="phone">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Checkbox-->
+                    <div class="container-checkbox">
+                        <h4 class="content-md">How can I help you?</h4>
+                        <div class="custom-checkbox mb-16">
+                            <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="job" id="job">
+                            <div class="flex">  
+                                <label for="job" class="custom-checkbox__label content-sm--gray-500 ">Job offer</label>
+                                <span class="content-xs--gray-300">If you are looking to expand your team</span>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-checkbox mb-16">
+                            <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="project" id="project">
+                            <div class="flex">  
+                                <label for="project" class="custom-checkbox__label content-sm--gray-500 ">Project offer</label>
+                                <span class="content-xs--gray-300">You need help with a specific project</span>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-checkbox mb-16">
+                            <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="collaboration" id="collaboration">
+                            <div class="flex">  
+                                <label for="collaboration" class="custom-checkbox__label content-sm--gray-500 ">Collaboration</label>
+                                <span class="content-xs--gray-300">To work together creating something new</span>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="custom-checkbox mb-16">
+                            <div class="flex__item">
+                            <input class="custom-checkbox__input custom-checkbox__input--focus" type="checkbox" name="other" id="other">
+                            <div class="flex">  
+                                <label for="other" class="custom-checkbox__label content-sm--gray-500 ">Other</label>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="button" class="button button__width button--lg button--primary text-center" value="Contact Me!">
+
+                </form>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer class="section footer">
+        <div class='container footer__content'>
+            <p class="heading heading--xl white text-center">
+                Can I help you?
+            </p> 
+            <button class="button button--lg button--secondary button__fit-content">Get in touch!</button>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article</title>
+    <link rel="stylesheet" href="../css/styles.css" />  
+</head>
+<body>
+    <header class="section-header">
+        <div class='container header-base'>
+            <a class="logo" href="/index.html">
+                <img class="avatar-img" src="../readme_images/avatar/AvatarMaker.svg" alt="Katerin Arellano">
+                <div class="full-name">
+                    <span class="heading heading--sm">Katerin</span>
+                    <span class="heading heading--sm">Arellano</span>
+                </div>
+            </a>
+
+            <nav class="item">
+                <ul class="item content-md">
+                    <li class="hover-effects"><a href="/#article">Articles</a></li>
+                    <li class="hover-effects"><a href="/portafolio">Portafolio</a></li>
+                    <li class="hover-effects"><a href="/about.html">About</a></li>
+                    <li class="hover-effects"><a href="/contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+                </ul>
+            </nav> 
+
+            <!-- <img class="img-bars" src="../readme_images/bars.svg" alt="icon bars">    -->
+            <label for="hamburger">
+                <img class="img-x" src="../readme_images/icons/bars.svg" alt="icon bars"> 
+            </label>
+        </div>
+
+        <input type="checkbox" class="checkbox" id="hamburger">
+        <div class="mobile-menu">
+            <ul class="item-mobile content-md mt-32">
+                <li class="hover-effects"><a href="/#article">Articles</a></li>
+                <li class="hover-effects"><a href="/portafolio">Portafolio</a></li>
+                <li class="hover-effects"><a href="/about.html">About</a></li>
+                <li class="hover-effects"><a href="/contact.html"><button class="button button--sm .button--subtle button--sm">Contact</button></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section gray">
+        <div class="container">
+            <article>
+
+                <p class="overline article-date">January 1, 2022</p>
+                <h3 class="heading-md article-title text-center">Ruby on Rails</h3>
+                <figure class="text-center article-paragraph">
+                    <img class="image" src="../readme_images/ruby-on-rails.png" alt="logo ruby on rails">
+                </figure>
+                
+                <p class="content-lg article-paragraph">
+                    Ruby on Rails, also known as RoR and Rails, is a web framework used for web development. Like most application frameworks, RoR was built with the Ruby programming language for a specific task that its creator had while working at a web application development company.
+                    That's why Ruby on Rails is often referred to as "startup technology" because it was built for quick launches.
+                </p>
+                <h2 class="heading--xs article-paragraph">What is the difference between Ruby and Ruby on Rails?</h2>
+                <p class="content-lg article-paragraph">
+                    The first thing you should notice immediately is dependency.
+                    Ruby on Rails depends on Ruby to exist and function. On the other hand, Ruby does not require Rails to function and is often used without the additional use of Rails. Simply put, Ruby on Rails is an enhancement or add-on to Ruby.
+                </p>
+                <p class="content-lg article-paragraph">
+                    Ruby is a general-purpose programming language, as are C #, C ++, Java, JavaScript, Python, Ruby, and Visual Basic.
+                    Ruby has its own unique syntax and rules, since the job of a programming language is to tell the computer what to do and how to do it.
+                </p>
+
+                <p class="content-lg article-paragraph">
+                    On the other hand, Rails is not a programming language, it is a web framework or web development framework. Web application frameworks like Rails still use scripts written by developers, but they do not use their own language. Rails uses the Ruby programming language.
+                </p>
+
+                <figure class="text-center article-paragraph">
+                    <img class="image" src="../readme_images/dry.jpg" alt="logo ruby on rails">
+                </figure>
+                
+                <h2 class="heading--xs article-paragraph">The Rails philosophy is based on these two principles:</h2>
+                <p class="content-lg article-paragraph">
+                    <strong class="italic"> DRY ("Don't Repeat Yourself") </strong> - suggests that writing the same code over and over is bad practice.
+                </p>
+                <p class="content-lg article-paragraph">   
+                    <strong class="italic"> "Configuration Convention" </strong> - means that Rails makes some assumptions about what you want to do and how you are going to do it, rather than requiring you to specify every little thing through endless configuration files.
+                </p>
+            </article>
+            <div class="text-center">
+                <a class="button-md-content text-center" href="/index.html">Back to home</a>
+            </div>
+        </div>
+    </section>   
+    
+    <div class="section footer">
+        <div class='container footer__content'>
+            <p class="heading heading--xl white text-center">
+                Can I help you?
+            </p> 
+            <button class="button button--lg button--secondary button__fit-content">Get in touch!</button>
+        </div>
+    </div>
+</body>
+</html>

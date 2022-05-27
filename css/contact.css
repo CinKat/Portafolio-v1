@@ -1,0 +1,36 @@
+.header-contact {
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.container--form {
+  max-width: 580px; /*El width se aplicara dependiendo al padre*/
+  margin: auto; /*posiciona al centro*/
+}
+
+.contenedor-row {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 572px) {
+  .contenedor-row {
+    display: block;
+  }
+
+  .contenedor-flex__column {
+    display: block;
+  }
+  .custom {
+    width: 100%;
+  }
+
+  .custom-option {
+    width: 100%;
+  }
+
+  .padding {
+    padding-bottom: 1rem;
+  }
+}

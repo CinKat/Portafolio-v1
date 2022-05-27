@@ -1,0 +1,110 @@
+.header {
+    position: relative;
+    padding: 2rem;
+    background-color: white;
+  }
+  
+  .header-base {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    color: var(--gray-500);
+  }
+  
+  .avatar-img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .full-name {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .item {
+    display: flex;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .img-bars {
+    display: none;
+  }
+  
+  /* @media only screen and (max-width: 675px) {
+    .img-bars {
+      display: block;
+    }
+  
+    .item {
+      display: none;
+    }
+  } */
+  
+  .img-x {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: none;
+    align-items: center;
+  }
+  
+  .item-mobile {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+    align-items: center;
+  }
+  
+  .checkbox {
+    display: none;
+  }
+  
+  /*************** Transition - hover ********************/
+  .hover-effects {
+    border-radius: 0.5rem;
+    padding: 0.5em 0.75em;
+    transition: background-color 0.5s;
+  }
+  .hover-effects:hover {
+    background-color: var(--primary-100);
+  }
+  
+  /**********************************************************/
+  
+  @media only screen and (max-width: 771px) {
+    .item {
+      display: none;
+    }
+  
+    .img-bars {
+      display: block;
+    }
+  
+    .img-x {
+      display: block;
+    }
+  
+    /* .item-mobile--open {
+      display: flex;
+    } */
+  
+    .checkbox:checked + .mobile-menu {
+      display: flex;
+      justify-content: center;
+    }
+  }
